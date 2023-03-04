@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const sleep = (time) => {
+            return new Promise((resolve) => setTimeout(resolve, time))
+        }
+
+        const startmusic = async () => {
+            var symbol = new Audio();
+            symbol.src = "reources/soundtrack/Symbol.mp3";
+            symbol.play();
+            while (soundtracke == true) {
+                var drums = new Audio();
+                drums.src = "reources/soundtrack/Drum Set.mp3";
+                drums.play();
+                await sleep(2345)
+            }
+        }
+
+
+        var soundtracke = true;
+
+        window.onload = startmusic;
+
+
+        const roll = async () => {
+            for (let r = 0; r < 50; r++) {
+                function getRndInteger(min, max) {
+                    return Math.floor(Math.random() * (max - min + 1)) + min;
+                }
+                i = getRndInteger(1, 4);
+                if (i == 1) {
+                    var sts = new Audio();
+                    sts.src = "reources/sounds/1.mp3";
+                    sts.play();
+                }
+                if (i == 2) {
+                    var sts = new Audio();
+                    sts.src = "reources/sounds/2.mp3";
+                    sts.play();
+                }
+                if (i == 3) {
+                    var sts = new Audio();
+                    sts.src = "reources/sounds/3.mp3";
+                    sts.play();
+                }
+                if (i == 4) {
+                    var sts = new Audio();
+                    sts.src = "reources/sounds/4.mp3";
+                    sts.play();
+                }
+                await sleep(105)
+                console.log(i)
+            }
+        }
+
+        function coin() {
+            var sts = new Audio();
+            sts.src = "reources/sounds/Coin.mp3";
+            sts.play();
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="roll();">roll</button>
+    <button onclick="coin();">insert coin</button>
+</body>
+
+</html>

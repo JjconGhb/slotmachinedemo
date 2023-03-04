@@ -1,0 +1,252 @@
+:root {
+    --imgpos: 252px;
+    --imgsiz: 110px;
+}
+
+@font-face {
+    font-family: lcd;
+    src: url(fonts/lcd.ttf);
+}
+
+@font-face {
+    font-family: sfui-b;
+    src: url(fonts/sfui.ttf);
+}
+
+body {
+    user-select: none;
+    background-color: black;
+}
+
+#game {
+    background-image: url("slotimages/wallpaper.png");
+    background-color: darkblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1100px;
+    background-position: center;
+    height: 700px;
+}
+
+#machine {
+    background-image: url('slotimages/machine.png');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+#spinbt {
+    background-image: url('slotimages/button_lit.png');
+    background-color: #ffffff00;
+    border: none;
+    margin: auto;
+    width: 142px;
+    background-repeat: no-repeat;
+    height: 86px;
+    position: relative;
+    top: 324px;
+    right: 424px;
+}
+
+#creditara {
+    margin: auto;
+    width: fit-content;
+    height: 47px;
+    margin-top: 178px;
+    margin-left: 643px;
+}
+
+#creditarb {
+    width: 287px;
+    height: 47px;
+    position: relative;
+    bottom: 55px;
+    right: -214px;
+}
+
+.lcd {
+    background-color: rgb(92, 0, 0);
+    color: rgb(236, 0, 0);
+    text-shadow: 0px 0px 10px #ff0000;
+    font-family: lcd;
+    font-size: 32px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 10px;
+    border: 4px solid white;
+    width: 100px;
+    height: 100%;
+    text-indent: 10px;
+}
+
+#insert_coin {
+    text-align: center;
+    font-family: sfui-b;
+    font-size: 15px;
+    margin-top: 5px;
+    opacity: 0%;
+    text-indent: 0px;
+}
+
+#coins_accepted {
+    text-align: center;
+    font-family: sfui-b;
+    font-size: 15px;
+    margin-top: 5px;
+    opacity: 0%;
+    text-indent: 0px;
+}
+
+#paid, #credt {
+width: 125px;
+}
+
+.insert {
+    margin-right: 6px;
+}
+
+#credit {
+    width: 33px;
+}
+
+#payline {
+    position: relative;
+    top: 114px;
+    right: 120px;
+    background-image: url('slotimages/payline.png');
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 700px;
+    z-index: 10;
+}
+
+#slots {
+    height: 180px;
+    width: fit-content;
+    position: relative;
+    top: 101px;
+    left: 343px;
+} 
+
+.slotbg {
+    margin-left: 20px;
+    float: left;
+    border: 8px solid rgb(255, 255, 255);
+    height: 180px;
+    width: 120px;
+    overflow: hidden;
+    background-color: #e7e7e7;
+}
+
+.slot {
+    position: relative;
+}
+
+#first {
+    margin-left: 0px;
+}
+
+.shadow1 {
+    position: relative;
+    z-index: 1;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2959383582534576) 0%, rgba(0, 0, 0, 0.805742279822085) 0%, rgba(15, 15, 15, 1) 0%, rgba(15, 15, 15, 0.17829129942992827) 0%, rgba(15, 15, 15, 0.18109241987810754) 6%, rgba(255, 255, 255, 0) 82%, rgba(255, 255, 255, 0) 100%, rgba(8, 130, 97, 0) 255%);
+    height: 90px;
+    width: 100%;
+    color: green;
+}
+
+.shadow2 {
+    position: relative;
+    z-index: 1;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2959383582534576) 0%, rgba(0, 0, 0, 0.805742279822085) 0%, rgba(15, 15, 15, 1) 0%, rgba(15, 15, 15, 0.682492980102197) 0%, rgba(15, 15, 15, 0.14187673360359765) 49%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%, rgba(8, 130, 97, 0) 255%);
+    height: 90px;
+    width: 100%;
+    color: green;
+}
+
+.seven {
+    position: relative;
+    bottom: var(--imgpos);
+    height: 110px;
+    width: 100%;
+    background-image: url('slotimages/7.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.eleven {
+    position: relative;
+    bottom: var(--imgpos);
+    height: 110px;
+    width: 100%;
+    background-image: url('slotimages/711.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+
+.grape {
+    position: relative;
+    bottom: var(--imgpos);
+    height: 110px;
+    width: 100%;
+    background-image: url('slotimages/grape.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.bar {
+    position: relative;
+    bottom: var(--imgpos);
+    height: 110px;
+    width: 100%;
+    background-image: url('slotimages/bar.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.threbar {
+    position: relative;
+    bottom: var(--imgpos);
+    height: 110px;
+    width: 100%;
+    background-image: url('slotimages/3bar.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.orange {
+    position: relative;
+    bottom: var(--imgpos);
+    height: 110px;
+    width: 100%;
+    background-image: url('slotimages/orange.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.ufd {
+    position: relative;
+    bottom: var(--imgpos);
+    height: 110px;
+    width: 100%;
+    background-image: url('slotimages/ufd.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}

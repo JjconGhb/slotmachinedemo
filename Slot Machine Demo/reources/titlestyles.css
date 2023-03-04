@@ -1,0 +1,65 @@
+@font-face {
+    font-family: fs;
+    src: url(fonts/FreeSerif.ttf);
+}
+
+
+#title {
+    background-image: url("slotimages/wallpaper2.png");
+    animation: MOVE-BG 20s infinite linear;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#logo {
+    background-image: url("slotimages/logo.png");
+    width: 427px;
+    height: 234px;
+    margin: auto;
+}
+
+#menuitems {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: titlemnu 2.5s infinite;
+}
+
+#menubtn {
+    width: 100%;
+    height: 50px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: white;
+    background: rgb(0,0,0);
+    background: linear-gradient(328deg, rgba(0,0,0,0.2959383582534576) 0%, rgba(0,0,0,0.805742279822085) 0%, rgba(3,5,33,1) 0%, rgba(35,0,0,1) 100%, rgba(180,11,11,1) 100%, rgba(8,130,97,0) 255%); 
+    border: 4px double white;
+    font-family: fs;
+}
+
+@keyframes MOVE-BG {
+    from {
+        background-position: 0% 0%
+    }
+    to { 
+        background-position: 190% 190%
+    }
+}
+
+
+@keyframes titlemnu {
+    0% {
+        top: 51%;
+    }
+    50% {
+        top: 49%;
+    }
+    100% {
+        top: 51%;
+    }
+}
